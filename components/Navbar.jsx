@@ -34,22 +34,22 @@ else if (!ref.current.classList.contains('translate-x-full')){
    <div className='sticky block top-0'>
 <div className='   bg-white top-0 flex flex-col md:flex-row md:justify-start justify-center items-center shadow-md'>
   <div className="logo mx-5 justify-center items-center flex align-center">
-   <Link href={'/'}> <Image alt={'store'} width={170} height={80} className=' sm:mt-0 mt-2 '  src="/store.png"/></Link>
+   <Link href={'/'}> <Image alt={'store'} width={190} height={100} className=' sm:mt-0 mt-2 mr-[130px]  ' priority src="/store.png"/></Link>
     
      </div>
   <div className="nav p-2 ">
     <ul className=' flex  items-center space-x-2 font-bold md:text-xl p-2  '>
-      <Link href={'/Tshirts'}>  <li  className=' px-1 sm:px-4'>Tshirts</li> </Link>
-      <Link href={'/Hoodies'}>   <li className=' px-1 sm:px-4' >Hoodies</li></Link>
-      <Link href={'/Stickers'}>  <li  className=' px-1 sm:px-4'>Stickers</li></Link> 
-      <Link href={'/Mugs'}>      <li  className=' px-1 sm:px-4'>Mugs</li> </Link> 
+      <Link href={'/Tshirts'}>  <li  className=' px-1   hover:text-red-600 hover:shadow-yellow-500  sm:px-4'>Tshirts</li> </Link>
+      <Link href={'/Hoodies'}>   <li className=' px-1   hover:text-red-600 hover:shadow-yellow-500  sm:px-4' >Hoodies</li></Link>
+      <Link href={'/Stickers'}>  <li  className=' px-1  hover:text-red-600 hover:shadow-yellow-500   sm:px-4'>Stickers</li></Link> 
+      <Link href={'/Mugs'}>      <li  className=' px-1  hover:text-red-600 hover:shadow-yellow-500   sm:px-4'>Mugs</li> </Link> 
     </ul>
   </div>
   
   <div className='cart absolute  flex right-0 top-0 '>
- <Link href='/login'> <button  className='items-center  justify-center  align-center flex w-[40px] h-[50px]      p-0'>  <MdAccountCircle className= ' text-orange-500 w-7 h-7  ' /> </button></Link>
- <button onClick={togglecart} className='items-center  justify-center align-center flex w-[40px] h-[50px]  mr-6   p-0'>  < FaCartPlus className=' text-orange-500 w-7 h-7  ' /> 
- <div className='absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 mr-4 flex items-center justify-center text-sm'>
+ <Link href='/login'> <button  className='items-center  justify-center  align-center flex w-[40px] h-[50px]  mt-2     p-0'>  <MdAccountCircle className= ' text-orange-500 w-7 h-7  ' /> </button></Link>
+ <button onClick={togglecart} className='items-center  justify-center align-center flex w-[40px] h-[50px]  mr-6 mt-2  p-0'>  < FaCartPlus className=' text-orange-500 w-7 h-7  ' /> 
+ <div className='absolute top-0 mt-2 right-0 bg-red-500 text-white rounded-full w-5 h-5 mr-4 flex items-center justify-center text-sm'>
                {totalItems}   
                 </div>
  </button>

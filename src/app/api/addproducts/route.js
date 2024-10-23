@@ -7,14 +7,14 @@ export const POST = async (req) => {
 
   try {
     const body = await req.json(); 
-
+    console.log(req.body);
     for (let i = 0; i < body.length; i++) {
       let p = new Product({
         title: body[i].title,
         slug: body[i].slug,
         desc: body[i].desc,
         img: body[i].img,
-        categary: body[i].categary,
+        category: body[i].category,
         size: body[i].size,
         color: body[i].color,
         price: body[i].price,

@@ -14,71 +14,23 @@ const foot = () => {
       </Link>
     </div>
     <div className=" flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+   
+      
+     
       <div className=" lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className=" title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 className=" title-font  font-bold text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className=" list-none mb-10">
           <li>
-            <a className=" text-gray-600 hover:text-gray-800">First Link</a>
+            <a href='/Tshirts' className=" text-gray-600 hover:text-gray-800">T-shirt</a>
           </li>
           <li>
-            <a className=" text-gray-600 hover:text-gray-800">Second Link</a>
+            <a href='/Hoodies' className=" text-gray-600 hover:text-gray-800">Hoodies</a>
           </li>
           <li>
-            <a className=" text-gray-600 hover:text-gray-800">Third Link</a>
+            <a href='/Mugs' className=" text-gray-600 hover:text-gray-800">Mugs</a>
           </li>
           <li>
-            <a className=" text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className=" lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className=" title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav className=" list-none mb-10">
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className=" lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className=" title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav className=" list-none mb-10">
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className=" lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className=" title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav className=" list-none mb-10">
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className=" text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a href='/Stickers' className=" text-gray-600 hover:text-gray-800">Stickers</a>
           </li>
         </nav>
       </div>
@@ -86,8 +38,7 @@ const foot = () => {
   </div>
   <div className=" bg-gray-100">
     <div className=" container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className=" text-gray-500 text-sm text-center sm:text-left">© 2024 store
-        <a href="https://x.com/iamHimnsu" rel="noopener noreferrer" className=" text-gray-600 ml-1" target="_blank">@diktiyaji</a>
+      <p className=" text-gray-500 text-sm text-center sm:text-left">© 2024 <a href="https://x.com/iamHimnsu" rel="noopener noreferrer" className=" text-gray-600 ml-1" target="_blank">@diktiyastore</a>
       </p>
       <span className=" inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a className=" text-gray-500">
@@ -106,7 +57,7 @@ const foot = () => {
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a className=" ml-3 text-gray-500">
+        <a href='' className=" ml-3 text-gray-500">
           <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className=" w-5 h-5" viewBox="0 0 24 24">
             <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>

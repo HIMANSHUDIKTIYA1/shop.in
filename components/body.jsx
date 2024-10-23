@@ -1,6 +1,9 @@
+
 import React from 'react'
 
-const body = () => {
+
+const body = async () => {
+
   return (
     <div>
       <section className=" text-gray-600 body-font">
@@ -83,6 +86,7 @@ const body = () => {
     <button className=" flex mx-auto mt-16 text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Button</button>
   </div>
 </section>
+
     </div>
   )
 }

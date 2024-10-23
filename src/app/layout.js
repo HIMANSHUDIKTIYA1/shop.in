@@ -13,7 +13,7 @@ export const metadata = {
 
 // eslint-disable-next-line react/prop-types
 export default function RootLayout({ children }) {
-  return (
+return (
     <>
     <html lang="en">
       <body className={inter.className}>
@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
       </CartProvider>
       
       
-     
       
+
       </body>
     </html>
    </>

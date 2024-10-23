@@ -49,7 +49,8 @@ const CartModule = () => {
             {cartItems.map(item => (
               <li key={item.id}>
                 <div className='item justify-center items-center flex my-2'>
-                  <div className='mx-2'> {item.name} </div>
+                  <div className='mx-2'> {item.name} ({item.size}/{item.color}) </div> 
+                  <div> </div>
                   <FaPlusCircle
                     className='text-orange-500 cursor-pointer'
                     onClick={() => handleQuantityChange(item.id, 1)}
