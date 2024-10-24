@@ -6,7 +6,7 @@ import connectDb from '../middleware/mongoose';
 const Mugs = async () => {
   await connectDb();
 
-    const products = await Product.find({category: 'mugs'});
+    const products = await Product.find({category: 'mugs'}).lean();;
 
     // Display loading indicator if products are still fetching
     if (!products) {

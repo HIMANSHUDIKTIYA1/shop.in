@@ -8,7 +8,7 @@ const Hoodies =  async () => {
 
   await connectDb();
 
-  const products = await Product.find({category: 'hoodies'});
+  const products = await Product.find({category: 'hoodies'}).lean();;
   let hoodies = {}
     for(let item of products){
       if(item.title in hoodies){
