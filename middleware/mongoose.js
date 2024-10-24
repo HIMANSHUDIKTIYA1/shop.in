@@ -12,13 +12,15 @@ const connectDb = async () => {
        useNewUrlParser: true,       
             useUnifiedTopology: true,   
             serverSelectionTimeoutMS: 40000, 
+        socketTimeoutMS: 45000,    
     
   
     });
     console.log('MongoDB connected');
   } catch (error) {
-    console.error('MongoDB connection error:', error.message);
-     setTimeout(connectDb, 10000);  
+   
+     console.error('MongoDB connection failed:', error);
+        process.exit(1); // एरर होने पर ऐप बंद कर दें
     
   }
 };
