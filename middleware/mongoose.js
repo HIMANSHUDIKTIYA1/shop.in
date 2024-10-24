@@ -1,6 +1,6 @@
 
 import mongoose from 'mongoose';
-
+const MONGODB_URI = process.env.MONGODB_URI ||'mongodb+srv://himanshudiktiya9:himanshudiktiyaji@cluster0.yiwv3.mongodb.net/' ;
 const connectDb = async () => {
   if (mongoose.connections[0].readyState) {
     console.log('MongoDB is already connected');
@@ -8,7 +8,7 @@ const connectDb = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
+    await mongoose.connect(MONGODB_URI, {
      serverSelectionTimeoutMS: 40000
   
     });
