@@ -13,6 +13,6 @@ const ProductSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 // मॉडल पहले से मौजूद है या नहीं, इसे सुरक्षित रूप से चेक करें
-const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema);
+const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema );
 
 export default Product;
