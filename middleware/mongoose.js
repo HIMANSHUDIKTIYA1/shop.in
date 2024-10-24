@@ -1,6 +1,6 @@
 
 import mongoose from 'mongoose';
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://himanshudiktiya9:himanshudiktiyaji@cluster0.yiwv3.mongodb.net/' ;
+const MONGODB_URI = process.env.MONGODB_URI ||'mongodb+srv://himanshudiktiya9:himanshudiktiyaji@cluster0.yiwv3.mongodb.net/' ;
 const connectDb = async () => {
   if (mongoose.connections[0].readyState) {
     console.log('MongoDB is already connected');
@@ -15,6 +15,7 @@ const connectDb = async () => {
     console.log('MongoDB connected');
   } catch (error) {
     console.error('MongoDB connection error:', error.message);
+    setTimeout(connectDb, 10000);
     throw new Error('MongoDB connection error');
   }
 };
