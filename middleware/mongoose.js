@@ -1,16 +1,23 @@
 import mongoose from 'mongoose';
 
 const connectDb = async () => {
-  if (mongoose.connection.readyState) {
+  if (mongoose.connections[0].readyState) {
+    // पहले से कनेक्टेड हैं
     return;
   }
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log("MongoDB connected");
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
-    throw error; // यह त्रुटि को ऊपर भेज देगा ताकि उसे सही तरीके से संभाला जा सके
+  
+  // कनेक्शन स्ट्रिंग को पर्यावरण चर से प्राप्त करें
+  const mongoUri = process.env.MONGODB_URI;
+
+  if (!mongoUri) {
+    throw new Error('MongoDB URI is not defined');
   }
+
+  await mongoose.connect(mongoUri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 };
 
 export default connectDb;
+
