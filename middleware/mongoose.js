@@ -1,14 +1,11 @@
 import mongoose from 'mongoose';
-const Mongo = async () =>{
-  await axios.get('/myDatabase.json');
-}
-const connectDb = async () => {
 
+const connectDb = async () => {
   if (mongoose.connection.readyState) {
     return;
   }
   try {
-    await mongoose.connect(Mongo);
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log("MongoDB connected");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
