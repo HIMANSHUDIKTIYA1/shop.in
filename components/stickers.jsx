@@ -7,7 +7,7 @@ const Stickers = async () => {
   try {
     await connectDb(); // Ensure database connection is established
 
-    const products = await Product.find({ category: 'stickers' }).lean();
+    const products = await Product.find({ category: 'stickers' });
 
     // Agar products fetch nahi hue to error message return karo
     if (!products || products.length === 0) {

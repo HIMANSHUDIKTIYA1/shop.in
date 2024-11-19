@@ -7,7 +7,7 @@ const Mugs = async () => {
   await connectDb();
 
   // Mugs के उत्पादों को लोड करना
-  const products = await Product.find({ category: 'mugs' }).lean();
+  const products = await Product.find({ category: 'mugs' });
 
   // यदि उत्पाद लोड नहीं हो रहे हैं तो लोडिंग संकेत दिखाना
   if (!products || products.length === 0) {

@@ -1,0 +1,305 @@
+[{
+  "_id": {
+    "$oid": "66f3060b2f687bcab959e796"
+  },
+  "title": " best mug",
+  "slug": "mugs",
+  "desc": "mugs ",
+  "img": "https://m.media-amazon.com/images/I/71SYddM7KmL._SL1500_.jpg",
+  "category": "mugs",
+  "size": " ",
+  "color": "red , blue , green , white",
+  "price": 299,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-24T18:33:47.927Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T18:36:04.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f306652f687bcab959e79a"
+  },
+  "title": "mugs combo ",
+  "slug": "mugs-combo",
+  "desc": "mugs ",
+  "img": "https://m.media-amazon.com/images/I/61kfQM-gmYL._SL1500_.jpg",
+  "category": "mugs",
+  "size": " ",
+  "color": "red , blue , green , white",
+  "price": 299,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-24T18:35:17.043Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T18:35:17.043Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f307082f687bcab959e7a0"
+  },
+  "title": "sticker ",
+  "slug": "sticker",
+  "desc": "sticker ",
+  "img": "https://m.media-amazon.com/images/I/81yw+CRPeKL._SL1500_.jpg",
+  "category": "stickers",
+  "size": " ",
+  "color": "",
+  "price": 199,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-24T18:38:00.606Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T18:38:00.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66eaeec2f75cb512bf235895"
+  },
+  "title": " t shirt for men",
+  "slug": "sample-product-shirt-1",
+  "desc": "This is a sample product welcome",
+  "img": "https://m.media-amazon.com/images/I/61hDkTYnCdL._SY879_.jpg",
+  "category": "tshirts",
+  "size": [
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Red",
+    "Green",
+    "Yellow",
+    "White",
+    "Black"
+  ],
+  "price": 1499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-18T15:16:18.984Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-29T18:16:19.928Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ead64bf75cb512bf235873"
+  },
+  "title": " t-shirt for men",
+  "slug": "sample-product-t-shirt",
+  "desc": "Crafted with premium quality fabric, this polo offers a comfortable and stylish fit. Its timeless design features a ribbed collar, three-button placket, and a hemmed bottom.",
+  "img": "https://m.media-amazon.com/images/I/71rzKMArJZL._SY879_.jpg",
+  "category": "tshirts",
+  "size": [
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Red",
+    "White",
+    "Black"
+  ],
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2024-09-18T13:31:55.460Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-29T18:16:19.912Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ead663f75cb512bf235876"
+  },
+  "title": " T-shirt combo for men  ",
+  "slug": "sample-product-t-shirt45",
+  "desc": "t shirt combo",
+  "img": "https://m.media-amazon.com/images/I/7119LEyvH5L._SX569_.jpg",
+  "category": "tshirts",
+  "size": [
+    "S",
+    "M",
+    "XL"
+  ],
+  "color": [
+    "Red",
+    "Green",
+    "Yellow",
+    "White",
+    "Black"
+  ],
+  "price": 999,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-18T13:32:19.205Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-29T18:16:19.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f307712f687bcab959e7a6"
+  },
+  "title": "sticker ",
+  "slug": "sticker-3",
+  "desc": "sticker ",
+  "img": "https://m.media-amazon.com/images/I/81jImT5-uaL._SL1500_.jpg",
+  "category": "stickers",
+  "size": " ",
+  "color": "",
+  "price": 199,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-24T18:39:45.573Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T18:39:45.573Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1c297984bedb19482e0c2"
+  },
+  "title": "hoodies for men classic  ",
+  "slug": "hoodies-collection",
+  "desc": "hoodies ",
+  "img": "https://m.media-amazon.com/images/I/71BZ58OS2oL._SY741_.jpg",
+  "category": "hoodies",
+  "size": [
+    "S",
+    "M",
+    "L"
+  ],
+  "color": [
+    "Red",
+    "White",
+    "Yellow",
+    "Black"
+  ],
+  "price": 8899,
+  "availableQty": 7,
+  "createdAt": {
+    "$date": "2024-09-23T19:33:43.197Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T19:33:43.197Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f307332f687bcab959e7a3"
+  },
+  "title": "sticker ",
+  "slug": "sticker-2",
+  "desc": "sticker ",
+  "img": "https://m.media-amazon.com/images/I/91zJ9mtTElL._SL1500_.jpg",
+  "category": "stickers",
+  "size": " ",
+  "color": "",
+  "price": 199,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-24T18:38:43.689Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-24T18:38:43.689Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1c38d984bedb19482e0d1"
+  },
+  "title": "hoodies for men  ",
+  "slug": "hoodies-collection-2",
+  "desc": "hoodies ",
+  "img": "https://m.media-amazon.com/images/I/41j1CuQl0HL._SX679_.jpg",
+  "category": "hoodies",
+  "size": [
+    "S",
+    "M",
+    "L"
+  ],
+  "color": [
+    "Red",
+    "Black",
+    "White"
+  ],
+  "price": 999,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-23T19:37:49.155Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T19:37:49.155Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1c230984bedb19482e0bf"
+  },
+  "title": "hoodies for men stylish  ",
+  "slug": "hoodies-collection-u",
+  "desc": "hoodies ij",
+  "img": "https://m.media-amazon.com/images/I/41bbSeZAqOL._SX679_.jpg",
+  "category": "hoodies",
+  "size": [
+    "S",
+    "M",
+    "L"
+  ],
+  "color": [
+    "Red",
+    "Black",
+    "White"
+  ],
+  "price": 799,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-23T19:32:00.368Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-10T18:35:58.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9830add68a6a1934ddc31"
+  },
+  "title": "mug ",
+  "slug": "mug2",
+  "desc": "mugs combo ",
+  "img": "https://m.media-amazon.com/images/I/61-cQ8rwLZL._SL1000_.jpg",
+  "category": "mugs",
+  "size": " ",
+  "color": "",
+  "price": 299,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2024-09-29T16:40:42.617Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-29T16:40:42.617Z"
+  },
+  "__v": 0
+}]

@@ -6,7 +6,7 @@ import connectDb from '../middleware/mongoose';
 const Hoodies = async () => {
   await connectDb();
 
-  const products = await Product.find({ category: 'hoodies' }).lean();
+  const products = await Product.find({ category: 'hoodies' });
 
   // अगर products नहीं हैं, तो लोडिंग टेक्स्ट दिखाएं
   if (!products || products.length === 0) {
