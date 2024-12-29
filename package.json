@@ -12,17 +12,18 @@
     "build": "^0.1.4",
     "mongoose": "^8.5.1",
     "next": "^14.2.15",
-    "react": "^19.0.0-rc-df783f9ea1-20240708",
-    "react-dom": "^19.0.0-rc-f38c22b244-20240704",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-icons": "^5.2.1",
     "react-toastify": "^10.0.6",
-    "status": "^0.0.13"
+    "status": "^0.0.13",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@eslint/compat": "^1.1.0",
     "@eslint/js": "^9.6.0",
     "autoprefixer": "10.4.19",
-    "eslint": "9.x",
+    "eslint": "^9.17.0",
     "eslint-config-next": "14.2.4",
     "eslint-plugin-react": "^7.34.3",
     "globals": "^15.8.0",
