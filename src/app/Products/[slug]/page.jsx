@@ -17,7 +17,7 @@ const ProductPage = ({ params }) => {
 
   // Pin code check logic
   const checkServiceability = async () => {
-    let pins = await fetch('http://localhost:3000/api/pincodes');
+    let pins = await fetch(`${process.env.URL}/api/pincodes`);
     let pinJson = await pins.json();
     setService(pinJson.includes(parseInt(pin)));
   };
@@ -52,7 +52,7 @@ const ProductPage = ({ params }) => {
   };
 
   const fetchProduct = async () => {
-    const response = await fetch(`http://localhost:3000/api/findproduct/${slug}`);
+    const response = await fetch(`${process.env.URL}/api/findproduct/${slug}`);
     if (response.ok) {
       const data = await response.json();
       setProduct(data);
