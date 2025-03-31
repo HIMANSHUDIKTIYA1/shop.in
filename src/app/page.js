@@ -11,8 +11,9 @@ const page = () => {
     <div>
    
 
-     <div className='  flex m-8 text-center justify-center items-center'>
-     <img className=' w-[auto] block'  src='/Home.png' alt='home'/> 
+     <div className='  flex m-8  text-center justify-center items-center'>
+      <br/>
+     <img className=' w-[auto] block py-11 '  src='/Home.png' alt='home'/> 
      </div>
      <Body/>
       
