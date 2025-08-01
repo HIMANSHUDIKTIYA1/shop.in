@@ -41,14 +41,7 @@ const Mugs = async () => {
                   <p className="mt-1">₹{product.price}</p>
 
                   <div>
-                    <p className="text-gray-500">Sizes:</p>
-                    <div>
-                      {product.size && product.size.includes('S') && <span className='border mx-1 px-1'>S</span>}
-                      {product.size && product.size.includes('M') && <span className='border mx-1 px-1'>M</span>}
-                      {product.size && product.size.includes('L') && <span className='border mx-1 px-1'>L</span>}
-                      {product.size && product.size.includes('XL') && <span className='border mx-1 px-1'>XL</span>}
-                      {product.size && product.size.includes('XXL') && <span className='border mx-1 px-1'>XXL</span>}
-                    </div>
+                    
                   </div>
                 </div>
               </div>
