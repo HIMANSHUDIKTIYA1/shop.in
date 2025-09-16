@@ -17,11 +17,9 @@ const ProductPage = ({ params }) => {
 
   // Pin code check logic
   const checkServiceability = async () => {
-<<<<<<< HEAD
+    
     let pins = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/pincodes`);
-=======
-    let pins = await fetch(`http://localhost:3000/api/pincodes`);
->>>>>>> a6103aa (update)
+
     let pinJson = await pins.json();
     setService(pinJson.includes(parseInt(pin)));
   
