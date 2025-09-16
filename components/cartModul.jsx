@@ -17,7 +17,7 @@ const CartModule = () => {
   }, [setCartItems]);
 
   useEffect(() => {
-    // जब भी कार्ट आइटम्स बदलते हैं, तब उन्हें लोकल स्टोरेज में सहेजें
+  
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 

@@ -6,12 +6,11 @@ import connectDb from '../middleware/mongoose';
 const Mugs = async () => {
   await connectDb();
 
-  // Mugs के उत्पादों को लोड करना
+
   const products = await Product.find({ category: 'mugs' });
 
-  // यदि उत्पाद लोड नहीं हो रहे हैं तो लोडिंग संकेत दिखाना
   if (!products || products.length === 0) {
-    return <p>Loading products...</p>; // या <p>No products found</p>;
+    return <p>Loading products...</p>; 
   }
 
   return (
@@ -41,7 +40,12 @@ const Mugs = async () => {
                   <p className="mt-1">₹{product.price}</p>
 
                   <div>
+<<<<<<< HEAD
                     
+=======
+                   
+                
+>>>>>>> a6103aa (update)
                   </div>
                 </div>
               </div>

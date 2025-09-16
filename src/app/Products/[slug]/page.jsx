@@ -17,11 +17,41 @@ const ProductPage = ({ params }) => {
 
   // Pin code check logic
   const checkServiceability = async () => {
+<<<<<<< HEAD
     let pins = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/pincodes`);
+=======
+    let pins = await fetch(`http://localhost:3000/api/pincodes`);
+>>>>>>> a6103aa (update)
     let pinJson = await pins.json();
     setService(pinJson.includes(parseInt(pin)));
-  };
+  
+if(pinJson.includes(parseInt(pin))){
+setService(true);
+  toast.success('This pincode is Serviceable',{
 
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+
+}else{
+  setService(false);
+  toast.error('Sorry, we do not deliver to this pincode',{
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+}};
   const onChangePin = (e) => setPin(e.target.value);
 
   const addToCart = () => {
@@ -149,7 +179,8 @@ const ProductPage = ({ params }) => {
                   </button>
                 </div>
                 {!service && service !== null && (
-                  <div className="text-red-700 text-sm mt-3">Sorry, we do not deliver to this pincode</div>
+                  <div className="text-red-700 text-sm mt-3">Sorry, we do not deliver to this pincode </div>
+
                 )}
                 {service && service !== null && (
                   <div className="text-green-700 text-sm mt-3">This pincode is Serviceable</div>

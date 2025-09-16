@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+
 import Product from '../models/Products';
 import Link from 'next/link';
 import connectDb from '../middleware/mongoose';
@@ -46,7 +46,7 @@ const tshirts = async () => {
                     {product.category}
                   </h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">
-                    {product.title}
+                    {product.title}     
                   </h2>
                   <p className="mt-1">₹{product.price}</p>
                   <div>

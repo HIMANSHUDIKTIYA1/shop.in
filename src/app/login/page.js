@@ -1,8 +1,39 @@
-import React from 'react'
+"use client"
+import React,{useState} from 'react'
 import Link from 'next/link'
+import axios from 'axios'
+
 const page = () => {
+
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+     try {
+    const res = await axios.post('/api/login', { email, password });
+  
+   
+       alert("Logged in Successfully");
+       setEmail('');
+       setPassword('');
+       window.location.href = "/";
+    
+
+   } catch (error) {
+     alert("An error occurred");
+     console.error(error);
+   }
+  };
+
   return (
     <div>
+      <br />
+      <br />
+      <br />
+    <br />
+    
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -16,7 +47,7 @@ const page = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6">
+          <form action="#" onSubmit={handleSubmit} method="POST" className="space-y-6">
             <div>
               <label htmlFor="email"  className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
@@ -25,6 +56,8 @@ const page = () => {
                 <input
                   id="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   required
                   placeholder='Enter your email'
@@ -50,6 +83,9 @@ const page = () => {
                   id="password"
                   name="password"
                   type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder='Enter your password'
                   required
                   autoComplete="current-password"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"

@@ -53,7 +53,7 @@ const Navbar = () => {
             <Image
               alt="store"
               width={150}
-              height={60}
+              height={42}
               className="cursor-pointer transform transition-transform hover:scale-105"
               priority
               src="/store.png"
@@ -64,7 +64,7 @@ const Navbar = () => {
           <nav className="hidden md:flex space-x-6 font-semibold text-lg">
             {["Tshirts", "Hoodies", "Stickers", "Mugs"].map((item, index) => (
               <Link key={index} href={`/${item}`}>
-                <span className="relative cursor-pointer px-4 py-2 transition duration-300 hover:text-orange-600 hover:underline hover:scale-105">
+                <span className="relative cursor-pointer px-4 py-2 transition duration-300 hover:text-orange-600  hover:scale-105">
                   {item}
                 </span>
               </Link>

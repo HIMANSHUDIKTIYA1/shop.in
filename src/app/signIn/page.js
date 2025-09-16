@@ -1,8 +1,33 @@
-import React from 'react'
-
+"use client"
+import React, {useState} from 'react'
+import axios from 'axios'
 const page = () => {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
+  const handleSubmit = async(e) => {
+      e.preventDefault();
+    const data = { username, email, password };
+    const res = await axios.post('/api/signin', data);
+    if (res.status === 201) {
+      alert("User Created Successfully");
+    } else {
+      alert("User Creation Failed");
+    }
+    
+    
+    setUsername('');
+    setEmail('');
+    setPassword('');
+  }
+
   return (
     <div>
+         <br />
+      <br />
+      <br />
+    <br />
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -18,7 +43,7 @@ const page = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
 
 
-          <form action="#" method="POST" className="space-y-6">
+          <form action="#" onSubmit={handleSubmit} method="POST" className="space-y-6">
            <div>
               <div className="flex items-center justify-between">
                 <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
@@ -33,6 +58,8 @@ const page = () => {
                   id="name"
                   name="name"
                   type="name"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   required
                    placeholder='Enter your full name'
                   className="block p-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
@@ -48,6 +75,8 @@ const page = () => {
                   id="email"
                   name="email"
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                    placeholder='Enter your email'
                   required
                   autoComplete="email"
@@ -70,6 +99,8 @@ const page = () => {
                   id="password"
                   name="password"
                   type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   required
                   autoComplete="current-password"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"

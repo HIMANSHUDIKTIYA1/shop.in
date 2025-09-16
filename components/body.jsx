@@ -1,8 +1,8 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import { FaShippingFast, FaExchangeAlt, FaHeadset, FaLock, FaTag, FaTshirt } from "react-icons/fa";
-
+import Link from "next/link";
 const features = [
   {
     icon: <FaTshirt className="text-orange-600 w-12 h-12 mb-3" />,
@@ -37,9 +37,22 @@ const features = [
 ];
 
 const Body = () => {
+ 
+const [product , setProduct] = React.useState([])
+      useEffect(()=>{
+      const products = async()=>{
+      const res = await fetch("/api/getproducts");
+      const data = await res.json();
+     setProduct(data)
+      
+     }
+products()
+      },[])
+      
   return (
     <div className=" static">
       <section className="text-gray-600 body-font">
+       
         <div className="container px-5 py-5 mx-auto">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className="sm:text-4xl text-xl font-bold title-font mb-4 text-gray-900">
@@ -49,6 +62,37 @@ const Body = () => {
             Express your own style with trending products.
           </p>
           </div>
+         <div className="p-6">
+      <h2 className="text-2xl font-bold text-black mb-4">Top Products for you</h2>
+
+      <div style={ { scrollbarWidth: "none" }} className="  relative flex flex-row w-full overflow-scroll  scrollbar ">
+        {product?.map((item, index) => (
+          <Link
+            key={index}
+            href={`/Products/${item.slug}`} // ✅ dynamic link (customize here)
+           
+             className="min-w-[250px] max-w-[250px] border rounded-lg shadow hover:shadow-lg transition m-4 p-4 bg-white"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full  object-cover rounded-md"
+            />
+            <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
+            <p className="text-gray-600 text-sm">₹{item.price}</p>
+          </Link>
+        ))}
+      </div>
+
+    </div>
+      <button className="flex mx-auto mt-16 text-white bg-orange-600 border-0 py-3 px-10 focus:outline-none hover:bg-orange-700 rounded text-lg transition duration-300 transform hover:scale-105">
+            Shop Now
+          </button>
+    <br />
+    <br />
+     <br />
+    <br />
+    
           <div className="flex flex-wrap -m-4">
             {features.map((feature, index) => (
               <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
@@ -64,9 +108,7 @@ const Body = () => {
               </div>
             ))}
           </div>
-          <button className="flex mx-auto mt-16 text-white bg-orange-600 border-0 py-3 px-10 focus:outline-none hover:bg-orange-700 rounded text-lg transition duration-300 transform hover:scale-105">
-            Shop Now
-          </button>
+        
         </div>
       </section>
     </div>

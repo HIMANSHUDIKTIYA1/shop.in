@@ -3,6 +3,7 @@
 
 
 import Body from '../../components/body.jsx'
+import ImageCarousel from '../../components/ImageC.jsx'
 const page = () => {
 
   return (
@@ -12,8 +13,8 @@ const page = () => {
    
 
      <div className='  flex m-8  text-center justify-center items-center'>
-      <br/>
-     <img className=' w-[auto] block py-11 '  src='/Home.png' alt='home'/> 
+     
+     <ImageCarousel/>
      </div>
      <Body/>
       
