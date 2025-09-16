@@ -40,12 +40,7 @@ const Mugs = async () => {
                   <p className="mt-1">₹{product.price}</p>
 
                   <div>
-<<<<<<< HEAD
-                    
-=======
-                   
-                
->>>>>>> a6103aa (update)
+
                   </div>
                 </div>
               </div>
