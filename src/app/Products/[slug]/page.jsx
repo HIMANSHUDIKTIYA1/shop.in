@@ -80,7 +80,7 @@ setService(true);
   };
 
   const fetchProduct = async () => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/findproduct/${slug}`);
+    const response = await fetch(`/api/findproduct/${slug}`);
     if (response.ok) {
       const data = await response.json();
       setProduct(data);
