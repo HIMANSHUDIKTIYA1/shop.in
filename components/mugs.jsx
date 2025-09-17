@@ -39,7 +39,10 @@ const Mugs = async () => {
                   </h2>
                   <p className="mt-1">₹{product.price}</p>
 
-                  <div> 
+                  <div>
+         
+                
+
                   </div>
                 </div>
               </div>
