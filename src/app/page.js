@@ -9,14 +9,14 @@ const page = () => {
   return (
 
     <>
-    <div>
+    <div >
    
 
-     <div className='  flex m-8  text-center justify-center items-center'>
+     <div  className='  flex m-8  text-center justify-center items-center  '>
      
      <ImageCarousel/>
      </div>
-     <Body/>
+     <Body className=""/>
       
     </div>
     </>

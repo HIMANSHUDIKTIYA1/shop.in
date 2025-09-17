@@ -8,7 +8,7 @@ const CartContext = createContext({
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(() => {
-    // पेज लोड होने पर लोकल स्टोरेज से कार्ट आइटम्स लोड करें
+   
     if (typeof window !== 'undefined') {
       const storedCartItems = localStorage.getItem('cartItems');
       return storedCartItems ? JSON.parse(storedCartItems) : [];
@@ -17,7 +17,7 @@ export const CartProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    // जब भी कार्ट आइटम्स बदलते हैं, तब उन्हें लोकल स्टोरेज में सहेजें
+   
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 

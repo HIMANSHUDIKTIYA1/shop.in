@@ -75,6 +75,7 @@ setService(true);
       size: selectedSize,
       color: selectedColor,
       price: product.price,
+      img: product.img,
     };
     setCartItems([...cartItems, newCartItem]);
   };

@@ -64,9 +64,11 @@ products()
           </div>
          <div className="p-6">
       <h2 className="text-2xl font-bold text-black mb-4">Top Products for you</h2>
+      <div>
 
       <div style={ { scrollbarWidth: "none" }} className="  relative flex flex-row w-full overflow-scroll  scrollbar ">
-        {product?.map((item, index) => (
+     
+ {product?.map((item, index) => (
           <Link
             key={index}
             href={`/Products/${item.slug}`} // ✅ dynamic link (customize here)
@@ -82,8 +84,12 @@ products()
             <p className="text-gray-600 text-sm">₹{item.price}</p>
           </Link>
         ))}
+     
+       
       </div>
 
+      </div>
+ 
     </div>
       <button className="flex mx-auto mt-16 text-white bg-orange-600 border-0 py-3 px-10 focus:outline-none hover:bg-orange-700 rounded text-lg transition duration-300 transform hover:scale-105">
             Shop Now
@@ -92,7 +98,7 @@ products()
     <br />
      <br />
     <br />
-    
+    <marquee behavior="" direction="" width="100%"   className=" text-white bg-red-600 p-2 m-2 font-bold" scrollamount="10"> <span>🔥 Flat 50% Off | 🚚 Free Delivery | 💳 Easy Returns    </span>     </marquee>
           <div className="flex flex-wrap -m-4">
             {features.map((feature, index) => (
               <div key={index} className="xl:w-1/3 md:w-1/2 p-4">

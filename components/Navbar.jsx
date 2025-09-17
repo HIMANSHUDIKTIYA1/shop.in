@@ -121,7 +121,7 @@ const Navbar = () => {
       {/* Side Cart */}
       <div
         ref={cartRef}
-        className="fixed top-0 right-0 h-screen w-72 bg-orange-200 transition-transform translate-x-full overflow-y-auto py-10 px-8 shadow-lg"
+        className="fixed z-[50] top-0 right-0 h-screen w-screen bg-orange-200 transition-transform translate-x-full overflow-y-auto py-10 px-8 shadow-lg"
       >
         <h1 className="text-xl font-bold text-center mb-8">Shopping Cart</h1>
         <button
