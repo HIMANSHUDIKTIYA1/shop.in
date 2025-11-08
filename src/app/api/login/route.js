@@ -1,20 +1,19 @@
 import connectDb from "../../../../middleware/mongoose";
 import User from "../../../../models/User";
+import { NextResponse } from 'next/server';
 
 export async function POST(req) {
   try {
     await connectDb();
-
-    const data = await req.json(); // get JSON from fetch
-    const { email, password } = data;
-
-    const existingUser = await User.findOne({ email , password });
+    const { email, password } = await req.json();
+    const existingUser = await User.findOne({ email, password, role: { $in: [undefined, 'user'] } });
     if (existingUser) {
-      return new Response({message: "Login Successful"} , { status: 200 })
+      const res = NextResponse.json({ message: 'Login Successful', user: { name: existingUser.name, email: existingUser.email } }, { status: 200 });
+      res.cookies.set('user', JSON.stringify({ name: existingUser.name, email: existingUser.email }), { httpOnly: true, sameSite: 'lax', path: '/' });
+      return res;
     }
-    return new Response({message: "Invalid Credentials"} , { status: 400 });
-
+    return NextResponse.json({ message: 'Invalid Credentials' }, { status: 400 });
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }

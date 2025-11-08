@@ -1,10 +1,10 @@
 "use client"
-import React,{useState} from 'react'
+import React,{useState , useContext} from 'react'
 import Link from 'next/link'
 import axios from 'axios'
-
+import CartContext from '../context/CartContext'
 const page = () => {
-
+  const { setUserEmail } = useContext(CartContext);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -13,8 +13,10 @@ const page = () => {
     e.preventDefault();
      try {
     const res = await axios.post('/api/login', { email, password });
-  
-   
+ 
+   console.log(res.data);
+        setUserEmail(email);
+        
        alert("Logged in Successfully");
        setEmail('');
        setPassword('');

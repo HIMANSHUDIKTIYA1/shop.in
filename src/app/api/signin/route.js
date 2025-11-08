@@ -13,7 +13,10 @@ export async function POST(req) {
     }
 
     const user = await User.create({ name: username, email, password });
-    return new Response(JSON.stringify({ message: "User Created Successfully", user }), { status: 201 });
+   
+   
+ user.cookies.set('user', JSON.stringify({ name: username, email: email }));
+  return new Response(JSON.stringify({ message: "User Created Successfully", user }), { status: 201 });
   } catch (err) {
     return new Response(JSON.stringify({ error: err.message }), { status: 500 });
   }

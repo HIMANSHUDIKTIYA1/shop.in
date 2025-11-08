@@ -14,8 +14,9 @@ async function getDbConnection() {
   return cachedDb;
 }
 
-export async function GET(request, { params }) {
-  const { slug } = params;
+export async function GET(request, context) {
+  // In Next.js 16, params is a Promise in route handlers
+  const { slug } = await context.params;
 
   // Early validation
   if (!slug || typeof slug !== 'string') {

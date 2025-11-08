@@ -16,7 +16,7 @@ const page = () => {
      
      <ImageCarousel/>
      </div>
-     <Body className=""/>
+     <Body />
       
     </div>
     </>

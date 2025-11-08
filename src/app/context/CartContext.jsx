@@ -15,14 +15,14 @@ export const CartProvider = ({ children }) => {
     }
     return [];
   });
-
+const [userEmail, setUserEmail] = useState(null); 
   useEffect(() => {
    
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
   return (
-    <CartContext.Provider value={{ cartItems, setCartItems }}>
+    <CartContext.Provider value={{ cartItems, setCartItems , userEmail, setUserEmail}}>
       {children}
     </CartContext.Provider>
   );

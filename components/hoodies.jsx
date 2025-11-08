@@ -8,7 +8,7 @@ const Hoodies = async () => {
 
   const products = await Product.find({ category: 'hoodies' });
 
-  // अगर products नहीं हैं, तो लोडिंग टेक्स्ट दिखाएं
+ 
   if (!products || products.length === 0) {
     return <p>Loading products...</p>;
   }
