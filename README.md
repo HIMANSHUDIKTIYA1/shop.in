@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ Diktiya Store
 
-## Getting Started
+A full-stack e-commerce web application built with **Next.js, React, MongoDB and Mongoose**. The project provides a modern shopping experience with product browsing, cart management, user authentication and a responsive interface.
 
-First, run the development server:
+🔗 **Live Demo:** https://diktiyastore.vercel.app
+
+## ✨ Features
+
+* 🛒 Add, update and remove products from cart
+* 🔐 User authentication and protected functionality
+* 📦 Product browsing and product details
+* ❤️ Manage products/users according to the application's functionality
+* 💾 MongoDB database integration using Mongoose
+* ⚡ Fast navigation with Next.js
+* 📱 Responsive UI
+* 🔔 User-friendly notifications with React Toastify
+* 🎬 Smooth UI animations using Framer Motion
+* 🍪 Cookie-based client-side data handling
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* Next.js
+* React
+* Tailwind CSS
+* Framer Motion
+* React Icons
+
+**Backend / Database**
+
+* Next.js API routes
+* Node.js
+* MongoDB
+* Mongoose
+* Axios
+
+**Other**
+
+* JavaScript
+* ESLint
+* Vercel
+
+## 📁 Project Structure
+
+```text
+shop.in/
+├── components/     # Reusable UI components
+├── middleware/     # Middleware and route protection
+├── models/         # MongoDB/Mongoose models
+├── public/         # Static assets
+├── src/            # Application source code
+├── shop.in/        # Project-related files
+├── package.json
+├── next.config.mjs
+└── tailwind.config.js
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/HIMANSHUDIKTIYA1/shop.in.git
+cd shop.in
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory and add the required MongoDB/database configuration used by the application.
+
+### 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open **http://localhost:3000** in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎯 What I Learned
 
-To learn more about Next.js, take a look at the following resources:
+Through this project, I practiced:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Building full-stack applications with Next.js
+* Connecting applications with MongoDB using Mongoose
+* Creating reusable React components
+* Managing client-side state and cookies
+* Building API-based application functionality
+* Authentication and middleware
+* Responsive UI development
+* Deploying a Next.js application with Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
+**Himanshu Diktiya**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+B.Sc. IT | Full-Stack Developer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* GitHub: https://github.com/HIMANSHUDIKTIYA1
+* Portfolio: https://hd-folio.netlify.app
+
+⭐ If you find this project useful, consider giving it a star!
